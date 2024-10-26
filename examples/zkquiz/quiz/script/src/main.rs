@@ -77,18 +77,19 @@ async fn main() {
         "You will be asked 3 questions. Please answer with the corresponding letter (a, b or c)."
     );
 
-    let mut user_awnsers = "".to_string();
-    let question1 = "Who invented bitcoin";
-    let answers1 = ["Sreeram Kannan", "Vitalik Buterin", "Satoshi Nakamoto"];
-    user_awnsers.push(ask_question(question1, &answers1));
+    let mut user_answers = "".to_string();
+    let question1 = "What is the capital of France?";
+    let answers1 = ["Berlin", "Paris", "Madrid"];
+    user_answers.push(ask_question(question1, &answers1));
 
-    let question2 = "What is the largest ocean on Earth?";
-    let answers2 = ["Atlantic", "Indian", "Pacific"];
-    user_awnsers.push(ask_question(question2, &answers2));
+    let question2 = "What is the chemical symbol for gold?";
+    let answers2 = ["Au", "Ag", "Fe"];
+    user_answers.push(ask_question(question2, &answers2));
 
-    let question3 = "What is the most aligned color";
-    let answers3 = ["Green", "Red", "Blue"];
-    user_awnsers.push(ask_question(question3, &answers3));
+    let question3 = "What is the native cryptocurrency of Ethereum?";
+    let answers3 = ["Bitcoin", "Ether", "Litecoin"];
+    
+    user_answers.push(ask_question(question3, &answers3));
 
     stdin.write(&user_awnsers);
 
