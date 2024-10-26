@@ -88,10 +88,10 @@ async fn main() {
 
     let question3 = "What is the native cryptocurrency of Ethereum?";
     let answers3 = ["Bitcoin", "Ether", "Litecoin"];
-    
+
     user_answers.push(ask_question(question3, &answers3));
 
-    stdin.write(&user_awnsers);
+    stdin.write(&user_answers);
 
     println!("Generating Proof ");
 
